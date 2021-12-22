@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import RxFlow
+import RxRelay
 
-class LoginViewController: baseVC {
+class LoginViewController: baseVC ,Stepper {
     
+    var steps = PublishRelay<Step>()
+
     
     // MARK:- UI
     let button1 = UIButton().then {
@@ -40,16 +44,18 @@ class LoginViewController: baseVC {
         view.addSubview(label1)
     }
     override func setupConstraints() {
+        
+        button1.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
         label1.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-        }
-        button1.snp.makeConstraints {
-            $0.leading.equalTo(label1.snp.centerX).offset(30)
+            $0.bottom.equalTo(button1.snp.top).inset(30)
         }
     }
     @objc
         func loginButtonDidTap() {
-            self.steps.accept(DemoStep.homeIsRequired)
+            self.steps.accept(Steps.HomeIsRequired)
         }
     
 }

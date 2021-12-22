@@ -20,13 +20,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
        func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
            guard let windowScene = (scene as? UIWindowScene) else { return }
+           
+           coordinator.rx.willNavigate
+               .subscribe(onNext: { flow, step in
+                   let cur = "\(flow)".split(separator: " ").last ?? "No"
+                   print("\(cur) \(step)")
+               })
+               .disposed(by: disposeBag)
+           
            let window = UIWindow(windowScene: windowScene)
            self.window = window
            
            let appFlow = AppFlow(window: window)
-           self.coordinator.coordinate(flow: appFlow, with: AppStepper())
+           let appstepper = Appstepper()
+           
+           self.coordinator.coordinate(flow: appFlow, with: appstepper)
            window.makeKeyAndVisible()
-
        }
 
    

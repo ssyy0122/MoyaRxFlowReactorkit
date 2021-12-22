@@ -20,7 +20,11 @@ class baseVC: UIViewController {
     
     // MARK:- View Life Cycle
     override func viewDidLoad() {
-        self.view.backgroundColor = .green
+        self.view.backgroundColor = .white
+        setupLayout()
+        setupData()
+        setupConstraints()
+        setupBinding()
     }
     func setupLayout() {
         
