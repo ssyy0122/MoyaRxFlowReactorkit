@@ -16,4 +16,21 @@ import Then
 
 class AppFlow: Flow {
     
+    var window: UIWindow
+    
+    var root: Presentable{
+        return self.window
+    }
+    
+    func navigate(to step: Step) -> FlowContributors {
+        <#code#>
+    }
+    
+    
+    init(window: UIWindow) {
+           self.window = window
+       }
+    
+
+    
 }
