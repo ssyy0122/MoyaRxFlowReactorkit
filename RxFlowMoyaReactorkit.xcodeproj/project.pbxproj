@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EF648AED59213C26FA8C330 /* Pods_RxFlowMoyaReactorkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D6A726C805445C48B5E555 /* Pods_RxFlowMoyaReactorkit.framework */; };
+		E8837E012772B76200DBF34B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E002772B76200DBF34B /* AppDelegate.swift */; };
+		E8837E032772B76200DBF34B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E022772B76200DBF34B /* SceneDelegate.swift */; };
+		E8837E0A2772B76300DBF34B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8837E092772B76300DBF34B /* Assets.xcassets */; };
+		E8837E0D2772B76300DBF34B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8837E0B2772B76300DBF34B /* LaunchScreen.storyboard */; };
+		E8837E172772B7C100DBF34B /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E162772B7C100DBF34B /* AppStepper.swift */; };
+		E8837E192772B7D300DBF34B /* DemoStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E182772B7D300DBF34B /* DemoStep.swift */; };
+		E8837E1B2772B7DA00DBF34B /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E1A2772B7DA00DBF34B /* MainFlow.swift */; };
+		E8837E1D2772B7DF00DBF34B /* SecondFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E1C2772B7DF00DBF34B /* SecondFlow.swift */; };
+		E8837E1F2772B7E300DBF34B /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E1E2772B7E300DBF34B /* AppFlow.swift */; };
+		E8837E212772B7E900DBF34B /* navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E202772B7E900DBF34B /* navigate.swift */; };
+		E8837E242772B7FB00DBF34B /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E232772B7FB00DBF34B /* baseVC.swift */; };
+		E8837E272772B82100DBF34B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E262772B82100DBF34B /* MainViewController.swift */; };
+		E8837E292772B82600DBF34B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8837E282772B82600DBF34B /* SecondViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13D6A726C805445C48B5E555 /* Pods_RxFlowMoyaReactorkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFlowMoyaReactorkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2EB688DD4342FB0758AA9C /* Pods-RxFlowMoyaReactorkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlowMoyaReactorkit.debug.xcconfig"; path = "Target Support Files/Pods-RxFlowMoyaReactorkit/Pods-RxFlowMoyaReactorkit.debug.xcconfig"; sourceTree = "<group>"; };
+		DE902AC1323BF02B818912B3 /* Pods-RxFlowMoyaReactorkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFlowMoyaReactorkit.release.xcconfig"; path = "Target Support Files/Pods-RxFlowMoyaReactorkit/Pods-RxFlowMoyaReactorkit.release.xcconfig"; sourceTree = "<group>"; };
+		E8837DFD2772B76200DBF34B /* RxFlowMoyaReactorkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlowMoyaReactorkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8837E002772B76200DBF34B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8837E022772B76200DBF34B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8837E092772B76300DBF34B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8837E0C2772B76300DBF34B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8837E0E2772B76300DBF34B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8837E162772B7C100DBF34B /* AppStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppStepper.swift; path = ../../../MoyaRxFlowReactorkit/Flow/Step/AppStepper.swift; sourceTree = "<group>"; };
+		E8837E182772B7D300DBF34B /* DemoStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoStep.swift; path = ../../../MoyaRxFlowReactorkit/Flow/Step/DemoStep.swift; sourceTree = "<group>"; };
+		E8837E1A2772B7DA00DBF34B /* MainFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainFlow.swift; path = ../../MoyaRxFlowReactorkit/Flow/MainFlow.swift; sourceTree = "<group>"; };
+		E8837E1C2772B7DF00DBF34B /* SecondFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondFlow.swift; path = ../../MoyaRxFlowReactorkit/Flow/SecondFlow.swift; sourceTree = "<group>"; };
+		E8837E1E2772B7E300DBF34B /* AppFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFlow.swift; path = ../../MoyaRxFlowReactorkit/Flow/AppFlow.swift; sourceTree = "<group>"; };
+		E8837E202772B7E900DBF34B /* navigate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = navigate.swift; path = ../../MoyaRxFlowReactorkit/Flow/navigate.swift; sourceTree = "<group>"; };
+		E8837E232772B7FB00DBF34B /* baseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = baseVC.swift; path = ../../MoyaRxFlowReactorkit/Base/baseVC.swift; sourceTree = "<group>"; };
+		E8837E262772B82100DBF34B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../MoyaRxFlowReactorkit/Api_Naver/Controller/MainViewController.swift; sourceTree = "<group>"; };
+		E8837E282772B82600DBF34B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../../MoyaRxFlowReactorkit/Api_Naver/Controller/SecondViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8837DFA2772B76200DBF34B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF648AED59213C26FA8C330 /* Pods_RxFlowMoyaReactorkit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EDB34804863EBA83E897107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13D6A726C805445C48B5E555 /* Pods_RxFlowMoyaReactorkit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74F841AB30307CB35CB2C1A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E2EB688DD4342FB0758AA9C /* Pods-RxFlowMoyaReactorkit.debug.xcconfig */,
+				DE902AC1323BF02B818912B3 /* Pods-RxFlowMoyaReactorkit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8837DF42772B76200DBF34B = {
+			isa = PBXGroup;
+			children = (
+				E8837E252772B81500DBF34B /* Controller */,
+				E8837E222772B7F200DBF34B /* Base */,
+				E8837E142772B7A000DBF34B /* Flow */,
+				E8837DFF2772B76200DBF34B /* RxFlowMoyaReactorkit */,
+				E8837DFE2772B76200DBF34B /* Products */,
+				74F841AB30307CB35CB2C1A4 /* Pods */,
+				1EDB34804863EBA83E897107 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8837DFE2772B76200DBF34B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8837DFD2772B76200DBF34B /* RxFlowMoyaReactorkit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8837DFF2772B76200DBF34B /* RxFlowMoyaReactorkit */ = {
+			isa = PBXGroup;
+			children = (
+				E8837E002772B76200DBF34B /* AppDelegate.swift */,
+				E8837E022772B76200DBF34B /* SceneDelegate.swift */,
+				E8837E092772B76300DBF34B /* Assets.xcassets */,
+				E8837E0B2772B76300DBF34B /* LaunchScreen.storyboard */,
+				E8837E0E2772B76300DBF34B /* Info.plist */,
+			);
+			path = RxFlowMoyaReactorkit;
+			sourceTree = "<group>";
+		};
+		E8837E142772B7A000DBF34B /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E8837E1A2772B7DA00DBF34B /* MainFlow.swift */,
+				E8837E1C2772B7DF00DBF34B /* SecondFlow.swift */,
+				E8837E1E2772B7E300DBF34B /* AppFlow.swift */,
+				E8837E202772B7E900DBF34B /* navigate.swift */,
+				E8837E152772B7AA00DBF34B /* Step */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		E8837E152772B7AA00DBF34B /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				E8837E162772B7C100DBF34B /* AppStepper.swift */,
+				E8837E182772B7D300DBF34B /* DemoStep.swift */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
+		E8837E222772B7F200DBF34B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E8837E232772B7FB00DBF34B /* baseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E8837E252772B81500DBF34B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8837E282772B82600DBF34B /* SecondViewController.swift */,
+				E8837E262772B82100DBF34B /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8837DFC2772B76200DBF34B /* RxFlowMoyaReactorkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8837E112772B76300DBF34B /* Build configuration list for PBXNativeTarget "RxFlowMoyaReactorkit" */;
+			buildPhases = (
+				00E1DFB2D36D282BD5937902 /* [CP] Check Pods Manifest.lock */,
+				E8837DF92772B76200DBF34B /* Sources */,
+				E8837DFA2772B76200DBF34B /* Frameworks */,
+				E8837DFB2772B76200DBF34B /* Resources */,
+				BE66D57088FC1605F0C4C4CD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxFlowMoyaReactorkit;
+			productName = RxFlowMoyaReactorkit;
+			productReference = E8837DFD2772B76200DBF34B /* RxFlowMoyaReactorkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8837DF52772B76200DBF34B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E8837DFC2772B76200DBF34B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E8837DF82772B76200DBF34B /* Build configuration list for PBXProject "RxFlowMoyaReactorkit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8837DF42772B76200DBF34B;
+			productRefGroup = E8837DFE2772B76200DBF34B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8837DFC2772B76200DBF34B /* RxFlowMoyaReactorkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8837DFB2772B76200DBF34B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8837E0D2772B76300DBF34B /* LaunchScreen.storyboard in Resources */,
+				E8837E0A2772B76300DBF34B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E1DFB2D36D282BD5937902 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxFlowMoyaReactorkit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE66D57088FC1605F0C4C4CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFlowMoyaReactorkit/Pods-RxFlowMoyaReactorkit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFlowMoyaReactorkit/Pods-RxFlowMoyaReactorkit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxFlowMoyaReactorkit/Pods-RxFlowMoyaReactorkit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8837DF92772B76200DBF34B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8837E292772B82600DBF34B /* SecondViewController.swift in Sources */,
+				E8837E212772B7E900DBF34B /* navigate.swift in Sources */,
+				E8837E1F2772B7E300DBF34B /* AppFlow.swift in Sources */,
+				E8837E012772B76200DBF34B /* AppDelegate.swift in Sources */,
+				E8837E032772B76200DBF34B /* SceneDelegate.swift in Sources */,
+				E8837E1B2772B7DA00DBF34B /* MainFlow.swift in Sources */,
+				E8837E192772B7D300DBF34B /* DemoStep.swift in Sources */,
+				E8837E172772B7C100DBF34B /* AppStepper.swift in Sources */,
+				E8837E1D2772B7DF00DBF34B /* SecondFlow.swift in Sources */,
+				E8837E242772B7FB00DBF34B /* baseVC.swift in Sources */,
+				E8837E272772B82100DBF34B /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8837E0B2772B76300DBF34B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8837E0C2772B76300DBF34B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8837E0F2772B76300DBF34B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8837E102772B76300DBF34B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8837E122772B76300DBF34B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2EB688DD4342FB0758AA9C /* Pods-RxFlowMoyaReactorkit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RxFlowMoyaReactorkit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ssyy.RxFlowMoyaReactorkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8837E132772B76300DBF34B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE902AC1323BF02B818912B3 /* Pods-RxFlowMoyaReactorkit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RxFlowMoyaReactorkit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ssyy.RxFlowMoyaReactorkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8837DF82772B76200DBF34B /* Build configuration list for PBXProject "RxFlowMoyaReactorkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8837E0F2772B76300DBF34B /* Debug */,
+				E8837E102772B76300DBF34B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8837E112772B76300DBF34B /* Build configuration list for PBXNativeTarget "RxFlowMoyaReactorkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8837E122772B76300DBF34B /* Debug */,
+				E8837E132772B76300DBF34B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8837DF52772B76200DBF34B /* Project object */;
+}
