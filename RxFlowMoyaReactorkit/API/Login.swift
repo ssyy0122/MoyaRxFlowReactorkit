@@ -15,19 +15,19 @@ enum Login {
 
 extension Login: TargetType {
     var baseURL: URL {
-        return URL(string: "http://10.53.68.75:3306")!
+        return URL(string: "http://10.53.68.75:3306/api/v1")!
     }
     
     var path: String {
             switch self {
-            case.Logins(_, _, _):
-                return "/api/v1/register"
+            case.Logins:
+                return "/register"
             }
     }
     
     var method: Moya.Method {
             switch self {
-            case .Logins(_, _, _):
+            case .Logins:
                 return .post
             }
     }
@@ -38,12 +38,12 @@ extension Login: TargetType {
     var task: Task {
         switch self {
         case .Logins(let fullname, let email, let password):
-            let prams: [String:Any] = [
-                "fullname":fullname,
+            let prams: [String: String] = [
+                "fullName":fullname,
                 "email":email,
                 "password":password
             ]
-            return .requestParameters(parameters: prams, encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: prams, encoding:JSONEncoding.default)
         }
     }
     

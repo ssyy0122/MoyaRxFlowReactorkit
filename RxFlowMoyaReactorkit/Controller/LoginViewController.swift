@@ -8,9 +8,10 @@
 import UIKit
 import RxFlow
 import RxRelay
+import Moya
+import RxSwift
 
 class LoginViewController: baseVC ,Stepper {
-    
     var steps = PublishRelay<Step>()
 
     
@@ -30,11 +31,12 @@ class LoginViewController: baseVC ,Stepper {
     // MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     override func setupBinding() {
         button1.rx.tap
-            .subscribe(onNext: {
-                print("버튼을 누름.")
+            .subscribe(onNext: { [weak self] in
+                self?.setupAPI()
             })
             .disposed(by: disposBag)
     }
@@ -53,10 +55,36 @@ class LoginViewController: baseVC ,Stepper {
             $0.bottom.equalTo(button1.snp.top).inset(30)
         }
     }
+    override func setupAPI() {
+        let provider = MoyaProvider<Login>()
+        provider.request(.Logins("zs32112321321z", "@12312312@", "zz12321ord")) {  result in
+            
+          switch result {
+          case .success(let response):
+            do {
+              
+                switch response.statusCode{
+                case 200:
+                    print("SUCCESS")
+                    print(try response.mapJSON())
+                case 400:
+                    print("FAILURE")
+                default:
+                    print("w?")
+                }
+            } catch {
+            }
+          case .failure(let err):
+              print(err)
+          }
+        }
+    }
+    
     @objc
         func loginButtonDidTap() {
             self.steps.accept(Steps.HomeIsRequired)
         }
+
     
 }
 

@@ -38,4 +38,7 @@ class baseVC: UIViewController {
     func setupBinding() {
         
     }
+    func setupAPI() {
+        
+    }
 }
