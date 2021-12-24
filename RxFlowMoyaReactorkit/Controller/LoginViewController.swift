@@ -57,7 +57,7 @@ class LoginViewController: baseVC ,Stepper {
     }
     override func setupAPI() {
         let provider = MoyaProvider<Login>()
-        provider.request(.Logins("zs32112321321z", "@12312312@", "zz12321ord")) {  result in
+        provider.request(.Logins("12", "@123@", "12312")) { [weak self] result in
             
           switch result {
           case .success(let response):
@@ -67,6 +67,7 @@ class LoginViewController: baseVC ,Stepper {
                 case 200:
                     print("SUCCESS")
                     print(try response.mapJSON())
+                    self?.steps.accept(Steps.HomeIsRequired)
                 case 400:
                     print("FAILURE")
                 default:
@@ -82,7 +83,7 @@ class LoginViewController: baseVC ,Stepper {
     
     @objc
         func loginButtonDidTap() {
-            self.steps.accept(Steps.HomeIsRequired)
+            
         }
 
     
